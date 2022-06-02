@@ -24,7 +24,7 @@ alert( result );
 ```
 
 ## Courses
-- **[ HTML Academy** ]**(https://htmlacademy.ru/)
+- **[ HTML Academy** ](https://htmlacademy.ru/)
 - **[learn.javascript.ru](https://learn.javascript.ru/)**
 - **[RS Schools Course «JavaScript/Front-end»](https://rs.school/#/)**
 
