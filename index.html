@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link  rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link  rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/fav.ico">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV Kvetkov</title>
 </head>
-<body>
-  <header>
+<body class="page-body">
+  <header class="main-header">
     <nav>
-      <ul>
-        <li>Contacts</li>
-        <li>About Myself</li>
-        <li>Skills and Proficiency</li>
-        <li>Code example</li>
-        <li>Courses</li>
-        <li>Languages</li>
+      <ul class="menu-list">
+        <li class="menu-item">Contacts</li>
+        <li class="menu-item">About Myself</li>
+        <li class="menu-item">Skills and Proficiency</li>
+        <li class="menu-item">Code example</li>
+        <li class="menu-item">Courses</li>
+        <li class="menu-item">Languages</li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main-page">
     <h1 class="visually-hidden"> Stas Kvetkov's CV </h1>
-    <div class="left-container">
+    <div class="container container-left">
       <section class="avatar">
         <h2 class="visually-hidden">Photo</h2>
         <img src="" alt="">                      <!--IMG-->
@@ -32,7 +32,7 @@
         <p>Junior frontend developer</p>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">Contacts </h2>
+        <h2 class="contacts-title">Contacts </h2>
         <div>
           <img src="" alt="">                      <!--IMG-->
           <p>Minsk</p>
@@ -51,25 +51,25 @@
         </div>
       </section>
       <section class="courses">
-        <h2 class="visually-hidden">Courses</h2>
+        <h2 class="courses-title">Courses</h2>
         <p>HTML Academy </p>
         <p>learn.javascript.ru</p>
         <p>RS Schools Course «JavaScript/Front-end»</p>
       </section>
       <section class="languages">
-        <h2 class="visually-hidden">Languages</h2>
+        <h2 class="languages-title">Languages</h2>
         <p>English </p>
         <p>French</p>
         <p>Russian</p>
       </section>
     </div>
-    <div class="right-container">
+    <div class="container">
       <section class="about-myself">
-        <h2 class="visually-hidden">About myself</h2>
+        <h2 class="aboutmyself-title">About myself</h2>
         <p>Currently, I work as an adjustment and testing engineer in the energy industry. I am a self-motivated, responsible, reliable, and hardworking person. I am able to work independently and also within a team setting. I’m interested in Web Development, because it gives me the opportunity to express myself creatively. I am keen and very willing to learn Frontend Development to be part of the developer community. </p>
       </section>
       <section class="code-example">
-        <h2 class="visually-hidden">Code exemple</h2>
+        <h2 class="code-title">Code exemple</h2>
         <pre>
           <code>
             function sum(a, b) {
@@ -82,7 +82,7 @@
           </pre>
       </section>
       <section class="skills">
-        <h2 class="visually-hidden">Skills and Proficiency</h2>
+        <h2 class="skills-title">Skills and Proficiency</h2>
         <ul class="skills-list">
           <li class="skills-item">
             <img src="" alt="">
@@ -105,12 +105,12 @@
       </section>
     </div>
   </main>
-  <footer>
+  <footer class="main-footer">
     <section class="info">
       <h2 class="visually-hidden">GitHub and RSSchool links</h2>
-      <a href=""><img src="" alt=""></a>
+      <a href="https://github.com/StasKv"><img src="assets/github.svg" alt="GitHub link" width="40" height="40"></a>
       <p>Created in 2022 </p>
-      <a href=""><img src="" alt=""></a>
+      <a href="https://rs.school/js/"><img src="assets/rs_school_js.svg" alt="RSSchool link" width="80"></a>
     </section>
   </footer>
 </body>
