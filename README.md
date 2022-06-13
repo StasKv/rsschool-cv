@@ -1,1 +1,1 @@
-# rsschool-cv
+https://staskv.github.io/rsschool-cv/
