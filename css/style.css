@@ -1,9 +1,25 @@
+/* inter-600 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/inter-v11-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+url('assets/fonts/inter-v11-latin-600.woff') format('woff'); /* Modern Browsers */
+}
 
+@font-face {
+	font-family: 'Gilroy';
+	src: url('assets/fonts/Gilroyextrabold.woff2') format('woff2'),
+		url('assets/fonts/Gilroyextrabold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
 
 /* Global */
-.page {
 
-  background: linear-gradient(135deg, rgb(51, 61, 148) 0%, rgb(224, 49, 124) 93.75%);
+.page {
+  height: 100%;
+  scroll-behavior: smooth; 
 }
 
 *,
@@ -16,12 +32,16 @@
   width: 840px;
 	margin: 0 auto;
 	padding: 0 20px;
-  /*background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);*/
+  background: linear-gradient(135deg, rgb(51, 61, 148) 0%, rgb(224, 49, 124) 93.75%) fixed;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  outline: 4px solid greenyellow;
-	outline-offset: -4px;
+  font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 .visually-hidden {
@@ -42,6 +62,14 @@ a {
   color: #000;
 }
 
+h2 {
+  margin: 20px 0;
+  font-family: 'Gilroy', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 20px;
+}
 
 /*Header*/
 
@@ -51,8 +79,6 @@ a {
   padding-right: 10px;
   background-color: rgb(196, 196, 196, 0.3);
   border-radius: 10px;
-  outline: 4px solid greenyellow;
-	outline-offset: -4px;
 }
 
 .menu-list {
@@ -63,7 +89,7 @@ a {
   list-style: none;
 }
 
-.menu-item {
+.menu-item a{
   margin-right: 30px;
   color: azure;
 }
@@ -72,7 +98,7 @@ a {
   margin-right: 0;
 }
 
-.menu-item:hover {
+.menu-item a:hover {
   color:#c4c4c4;
   cursor: pointer;
 }
@@ -125,6 +151,16 @@ background-color: rgb(196, 196, 196, 0.3);
 
 .full-name {
   color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size:  24px;
+}
+
+.first-name {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(196, 196, 196, 0.8)
 }
 
 .data p {
@@ -160,8 +196,15 @@ background-color: rgb(196, 196, 196, 0.3);
   color: white;
 }
 
+
 /*Education*/
+
+.education {
+  padding-top: 15px;
+}
+
 .education-title {
+  margin-top: 0;
   padding-left: 10px;
   color: white;
 }
@@ -178,8 +221,13 @@ background-color: rgb(196, 196, 196, 0.3);
 
 /* Languages*/
 
+.languages {
+  padding-top: 10px;
+}
+
 .languages-title {
-  padding-left: 10px;
+  margin-top: 0;
+  padding-left: 15px;
   color: white;
 }
 
@@ -202,10 +250,21 @@ background-color: rgb(196, 196, 196, 0.3);
 } 
 
 
+/* code*/
+.code-example pre {
+  margin: 0;
+  height: 160px;
+}
+
+.js-code {
+  font-weight: 700;
+}
+
+
 /*My projects */
 
 .my-projects-list {
-  padding-left: 25px;
+  padding-left: 15px;
   padding-bottom: 10px;
   margin: 0;
 }
@@ -242,8 +301,8 @@ background-color: rgb(196, 196, 196, 0.3);
 .skills-container::after {
   content: '';
   position: absolute;
-  top: -2.5px;
-  left:-2.5px;
+  top: -5px;
+  left:-5px;
   width: 62.5px;
   height: 62.5px;
   border-radius: 50%;
@@ -257,8 +316,8 @@ background-color: rgb(196, 196, 196, 0.3);
 .js-container::after {
   content: '';
   position: absolute;
-  top: -2.5px;
-  left:-2.5px;
+  top: -5px;
+  left:-5px;
   width: 62.5px;
   height: 62.5px;
   border-radius: 50%;
@@ -290,8 +349,6 @@ background-color: rgb(196, 196, 196, 0.3);
 .main-footer {
   background-color: rgb(196, 196, 196, 0.3);
   border-radius: 10px;
-  outline: 4px solid greenyellow;
-	outline-offset: -4px;
 }
 
 .info {
@@ -304,5 +361,26 @@ background-color: rgb(196, 196, 196, 0.3);
 }
 
 .info p {
+  align-self: center;
   color: white;
+}
+
+.info a {
+  display: flex;
+}
+
+.github-logo {
+  align-self: center;
+}
+
+.rss-logo {
+  margin: auto;
+}
+
+.rss-logo:hover {
+  fill: rgb(51, 61, 148);
+}
+
+.github-logo:hover {
+  fill: rgb(51, 61, 148);
 }
